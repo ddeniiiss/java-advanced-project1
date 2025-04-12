@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app
+    version="4.0"
+    xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+    xmlns:javaee="http://xmlns.jcp.org/xml/ns/javaee"
+    xmlns:xml="http://www.w3.org/XML/1998/namespace"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+  <display-name>Archetype Created Web Application</display-name>
+  <filter>
+  	<description>
+  	</description>
+  	<display-name>CabinetFilter</display-name>
+  	<filter-name>CabinetFilter</filter-name>
+  	<filter-class>lesson10.filters.CabinetFilter</filter-class>
+  </filter>
+  <filter>
+  	<description>
+  	</description>
+  	<display-name>BucketFilter</display-name>
+  	<filter-name>BucketFilter</filter-name>
+  	<filter-class>lesson10.filters.BucketFilter</filter-class>
+  </filter>
+  <filter>
+  	<description>
+  	</description>
+  	<display-name>CreateProductFilter</display-name>
+  	<filter-name>CreateProductFilter</filter-name>
+  	<filter-class>lesson10.filters.CreateProductFilter</filter-class>
+  </filter>
+  <filter>
+  	<description>
+  	</description>
+  	<display-name>SingleProductFilter</display-name>
+  	<filter-name>SingleProductFilter</filter-name>
+  	<filter-class>lesson10.filters.SingleProductFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>CabinetFilter</filter-name>
+  	<url-pattern>/CabinetFilter</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+  	<filter-name>BucketFilter</filter-name>
+  	<url-pattern>/BucketFilter</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+  	<filter-name>CreateProductFilter</filter-name>
+  	<url-pattern>/CreateProductFilter</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+  	<filter-name>SingleProductFilter</filter-name>
+  	<url-pattern>/SingleProductFilter</url-pattern>
+  </filter-mapping>
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>UserRoleServlet</display-name>
+  	<servlet-name>UserRoleServlet</servlet-name>
+  	<servlet-class>lesson10.servlets.UserRoleServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>UserRoleServlet</servlet-name>
+  	<url-pattern>/UserRoleServlet</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>
+</welcome-file-list>
+</web-app>
